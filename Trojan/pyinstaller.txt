@@ -29,3 +29,9 @@ For Python3:
 #def execute_system_command(self,command):
     DEVNULL = open(os.devnull, 'wb')
     return subprocess.check_output(command, shell=True, stderr=subprocess.DEVNULL, stdin=subprocess.DEVNULL)
+
+To package for windows form kali:
+Install wine and download python package
+#cd Downloads
+Wine:
+#wine msiexec /i python-2.7.18.msi
