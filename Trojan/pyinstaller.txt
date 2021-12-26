@@ -34,4 +34,4 @@ To package for windows form kali:
 Install wine and download python package
 #cd Downloads
 Wine:
-#wine msiexec /i python-2.7.18.msi
+#wine msiexec /i python-2.7.xx.msi
