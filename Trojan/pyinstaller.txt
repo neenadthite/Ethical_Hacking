@@ -2,7 +2,7 @@ pyinstaller
 
 install pyinstaller to convert and pack all python code into 1 executable for the target operating system
 
-pip install pyinstaller 
+# pip install pyinstaller 
 #for linux
 
 c:\python27\python.exe -m pip install pyinstaller
@@ -34,4 +34,6 @@ To package for windows form kali:
 Install wine and download python package
 #cd Downloads
 Wine:
-#wine msiexec /i python-2.7.xx.msi
+# wine msiexec /i python-2.7.xx.msi
+# cd .wine/drive_c/Pyton27/
+# wine pyton.exe -m pip install pyinstaller
