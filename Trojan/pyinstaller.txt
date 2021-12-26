@@ -37,3 +37,6 @@ Wine:
 # wine msiexec /i python-2.7.xx.msi
 # cd .wine/drive_c/Pyton27/
 # wine pyton.exe -m pip install pyinstaller
+
+Install necessary libraires:
+# pyinstaller.exe zlogger.py --onefile --noconsole
